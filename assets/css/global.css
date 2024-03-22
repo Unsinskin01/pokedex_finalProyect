@@ -1,0 +1,52 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* Define una animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+@keyframes example {
+    from {color: rgb(102, 255, 0);}
+    to {color: yellow;}
+  }
+h1 {
+    color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation: bounce 3s infinite;
+  }
+  
+
+body {
+    background-image: url('https://www.desktopbackground.org/download/2048x1152/2011/08/16/250775_download-2560x1440-8-bit-pokemons-wallpapers_2560x1440_h.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #7b1e69;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
